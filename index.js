@@ -95,9 +95,9 @@ app.get("/books/search", (req, res) => {
       book.description.toLowerCase().includes(lowerKeyword)
   );
 
-  if (filteredBooks.length === 0) {
-    return res.status(404).json({ message: "Không tìm thấy sách phù hợp" });
-  }
+  // if (filteredBooks.length === 0) {
+  //   return res.status(404).json({ message: "Không tìm thấy sách phù hợp" });
+  // }
 
   res.json(filteredBooks);
 });
