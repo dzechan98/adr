@@ -62,15 +62,15 @@ const books = [
       "https://salt.tikicdn.com/cache/750x750/ts/product/90/49/97/ec88ab408c1997378344486c94dbac40.jpg.webp",
     price: 520000,
   },
-  {
-    id: 7,
-    title: "Quản Lý Dự Án Phần Mềm",
-    author: "Vũ Thị Thanh",
-    description: "Phương pháp quản lý dự án hiệu quả trong ngành IT",
-    imageUrl:
-      "https://salt.tikicdn.com/cache/750x750/ts/product/71/9d/f6/034e4969a68181a0f850cdfa24503e0c.jpg.webp",
-    price: 480000,
-  },
+  // {
+  //   id: 7,
+  //   title: "Quản Lý Dự Án Phần Mềm",
+  //   author: "Vũ Thị Thanh",
+  //   description: "Phương pháp quản lý dự án hiệu quả trong ngành IT",
+  //   imageUrl:
+  //     "https://salt.tikicdn.com/cache/750x750/ts/product/71/9d/f6/034e4969a68181a0f850cdfa24503e0c.jpg.webp",
+  //   price: 480000,
+  // },
 ];
 
 app.get("/books", (req, res) => {
