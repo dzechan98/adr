@@ -14,7 +14,7 @@ const books = [
     author: "Nguyễn Văn An",
     description: "Cẩm nang về kỹ thuật viết code chuyên nghiệp",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png",
     price: 699000,
   },
   {
@@ -23,7 +23,7 @@ const books = [
     author: "Trần Minh Hiếu",
     description: "Hành trình đến với sự thành thạo trong lập trình",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
     price: 549000,
   },
   {
@@ -32,7 +32,7 @@ const books = [
     author: "Lê Thị Hương",
     description: "Nền tảng cơ bản cho mọi lập trình viên",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
     price: 450000,
   },
   {
@@ -41,7 +41,7 @@ const books = [
     author: "Phạm Quốc Bảo",
     description: "Khám phá thế giới AI từ căn bản đến nâng cao",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png",
     price: 799000,
   },
   {
@@ -50,7 +50,7 @@ const books = [
     author: "Hoàng Thị Lan",
     description: "Xây dựng website chuyên nghiệp với các công nghệ mới nhất",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png",
     price: 650000,
   },
   {
@@ -59,7 +59,7 @@ const books = [
     author: "Đỗ Văn Cường",
     description: "Những nguyên tắc và kỹ thuật bảo mật quan trọng",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
     price: 520000,
   },
   {
@@ -68,7 +68,7 @@ const books = [
     author: "Vũ Thị Thanh",
     description: "Phương pháp quản lý dự án hiệu quả trong ngành IT",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
     price: 480000,
   },
   {
@@ -77,7 +77,7 @@ const books = [
     author: "Ngô Quang Minh",
     description: "Khám phá các kỹ thuật học máy và học sâu hiện đại",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png",
     price: 850000,
   },
   {
@@ -86,62 +86,8 @@ const books = [
     author: "Lý Hoàng Nam",
     description: "Xây dựng ứng dụng di động đa nền tảng",
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png",
     price: 620000,
-  },
-  {
-    id: 10,
-    title: "Cơ Sở Dữ Liệu Nâng Cao",
-    author: "Trương Minh Đức",
-    description: "Thiết kế và tối ưu hóa cơ sở dữ liệu",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
-    price: 580000,
-  },
-  {
-    id: 11,
-    title: "DevOps Thực Hành",
-    author: "Mai Văn Hoàng",
-    description: "Triển khai quy trình DevOps trong doanh nghiệp",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
-    price: 750000,
-  },
-  {
-    id: 12,
-    title: "Kiến Trúc Phần Mềm",
-    author: "Đinh Thị Hà",
-    description: "Nguyên lý thiết kế và kiến trúc phần mềm hiện đại",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
-    price: 680000,
-  },
-  {
-    id: 13,
-    title: "Blockchain Cơ Bản",
-    author: "Bùi Quang Huy",
-    description: "Nhập môn công nghệ chuỗi khối và ứng dụng",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
-    price: 720000,
-  },
-  {
-    id: 14,
-    title: "Điện Toán Đám Mây",
-    author: "Nguyễn Thị Mai",
-    description: "Giải pháp điện toán đám mây cho doanh nghiệp",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
-    price: 590000,
-  },
-  {
-    id: 15,
-    title: "Lập Trình Game 2D",
-    author: "Trần Văn Tuấn",
-    description: "Hướng dẫn phát triển game 2D từ cơ bản đến nâng cao",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1669652639337-c513cc42ead6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
-    price: 630000,
   },
 ];
 
