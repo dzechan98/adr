@@ -14,7 +14,7 @@ const books = [
     author: "Nguyễn Văn An",
     description: "Cẩm nang về kỹ thuật viết code chuyên nghiệp",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png",
+      "https://salt.tikicdn.com/ts/category/cc/66/3d/4e4f1b8b1e772fe9e09611c6bec98746.png",
     price: 699000,
   },
   {
@@ -23,7 +23,7 @@ const books = [
     author: "Trần Minh Hiếu",
     description: "Hành trình đến với sự thành thạo trong lập trình",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
+      "https://salt.tikicdn.com/ts/category/53/0f/bc/f6e936554ec845b45af8f94cbd4f1569.png",
     price: 549000,
   },
   {
@@ -32,7 +32,7 @@ const books = [
     author: "Lê Thị Hương",
     description: "Nền tảng cơ bản cho mọi lập trình viên",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/7e/6e/d9/bd6bd1c3ceeea13a3f5eaa046689892a.jpg.webp",
     price: 450000,
   },
   {
@@ -41,7 +41,7 @@ const books = [
     author: "Phạm Quốc Bảo",
     description: "Khám phá thế giới AI từ căn bản đến nâng cao",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/bb/4d/53/ea97e4cad166882680c2ec7dda80290c.jpg.webp",
     price: 799000,
   },
   {
@@ -50,7 +50,7 @@ const books = [
     author: "Hoàng Thị Lan",
     description: "Xây dựng website chuyên nghiệp với các công nghệ mới nhất",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/3e/31/e5/4c7e03d791a9b464e2779ef0ee77e429.jpg.webp",
     price: 650000,
   },
   {
@@ -59,7 +59,7 @@ const books = [
     author: "Đỗ Văn Cường",
     description: "Những nguyên tắc và kỹ thuật bảo mật quan trọng",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/90/49/97/ec88ab408c1997378344486c94dbac40.jpg.webp",
     price: 520000,
   },
   {
@@ -68,31 +68,38 @@ const books = [
     author: "Vũ Thị Thanh",
     description: "Phương pháp quản lý dự án hiệu quả trong ngành IT",
     imageUrl:
-      "https://salt.tikicdn.com/ts/upload/c2/bc/6d/ff18cc8968e2bbb43f7ac58efbfafdff.png",
+      "https://salt.tikicdn.com/cache/750x750/ts/product/71/9d/f6/034e4969a68181a0f850cdfa24503e0c.jpg.webp",
     price: 480000,
-  },
-  {
-    id: 8,
-    title: "Học Sâu và Học Máy",
-    author: "Ngô Quang Minh",
-    description: "Khám phá các kỹ thuật học máy và học sâu hiện đại",
-    imageUrl:
-      "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png",
-    price: 850000,
-  },
-  {
-    id: 9,
-    title: "Phát Triển Ứng Dụng Di Động",
-    author: "Lý Hoàng Nam",
-    description: "Xây dựng ứng dụng di động đa nền tảng",
-    imageUrl:
-      "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png",
-    price: 620000,
   },
 ];
 
 app.get("/books", (req, res) => {
   res.json(books);
+});
+
+app.get("/books/search", (req, res) => {
+  const { keyword } = req.query;
+  console.log(keyword);
+
+  if (!keyword) {
+    return res
+      .status(400)
+      .json({ message: "Vui lòng cung cấp từ khóa tìm kiếm" });
+  }
+
+  const lowerKeyword = keyword.toLowerCase();
+  const filteredBooks = books.filter(
+    (book) =>
+      book.title.toLowerCase().includes(lowerKeyword) ||
+      book.author.toLowerCase().includes(lowerKeyword) ||
+      book.description.toLowerCase().includes(lowerKeyword)
+  );
+
+  if (filteredBooks.length === 0) {
+    return res.status(404).json({ message: "Không tìm thấy sách phù hợp" });
+  }
+
+  res.json(filteredBooks);
 });
 
 app.get("/books/:id", (req, res) => {
